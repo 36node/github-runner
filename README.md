@@ -11,10 +11,9 @@ docker buildx build --platform=linux/amd64 --push -t harbor.36node.com/common/ac
 ## 包含以下软件
 
 - curl
-- go v1.20
 - make
-- nodejs v20
-- pnpm v9
+- bash
+- jq
 
 ## customize
 
