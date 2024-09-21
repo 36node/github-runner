@@ -6,7 +6,6 @@ RUN sudo apt update -y && \
 # Install Go
 RUN curl -fsSL https://golang.org/dl/go1.20.9.linux-amd64.tar.gz | sudo tar -C /usr/local -xzf - && \
   echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc && \
-  source ~/.bashrc && \
   # Verify installations
   go version
 
@@ -19,3 +18,5 @@ RUN curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - && \
   node -v && \
   npm -v && \
   pnpm -v
+
+ENV PATH="/usr/local/go/bin:${PATH}"
