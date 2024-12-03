@@ -2,6 +2,8 @@
 
 这是 36node 团队通用 github runner
 
+release 2.321.0
+
 ## build 指令
 
 ```sh
