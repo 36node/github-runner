@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.4](https://github.com/36node/github-runner/compare/v1.2.3...v1.2.4) (2025-11-05)
+
+
+### Bug Fixes
+
+* remove create buildx ([4c985ea](https://github.com/36node/github-runner/commit/4c985ea99d046324427fe49f31e5d877df30f028))
+
 ## [1.2.3](https://github.com/36node/github-runner/compare/v1.2.2...v1.2.3) (2025-11-05)
 
 
