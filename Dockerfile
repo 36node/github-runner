@@ -8,7 +8,9 @@ RUN curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash - && \
   sudo apt-get install -y nodejs
 
 # Install pnpm 10
-RUN npm install -g pnpm@10
+RUN PNPM_VERSION="10.9.0" && \
+  curl -fsSL "https://github.com/pnpm/pnpm/releases/download/v${PNPM_VERSION}/pnpm-linuxstatic-x64" -o /usr/local/bin/pnpm && \
+  chmod +x /usr/local/bin/pnpm
 
 # Install Docker Buildx
 RUN BUILDX_VERSION=$(curl -s "https://api.github.com/repos/docker/buildx/releases/latest" | jq -r .tag_name) && \
