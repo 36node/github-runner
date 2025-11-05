@@ -5,8 +5,10 @@ RUN sudo apt update -y && \
 
 # Install Node.js 22 & pnpm 10
 RUN curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash - && \
-  sudo apt-get install -y nodejs && \
-  npm install -g pnpm@10
+  sudo apt-get install -y nodejs
+
+# Install pnpm 10
+RUN npm install -g pnpm@10
 
 # Install Docker Buildx
 RUN BUILDX_VERSION=$(curl -s "https://api.github.com/repos/docker/buildx/releases/latest" | jq -r .tag_name) && \
