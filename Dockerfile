@@ -23,6 +23,3 @@ RUN BUILDX_VERSION=$(curl -s "https://api.github.com/repos/docker/buildx/release
   mv docker-buildx /home/runner/.docker/cli-plugins/ && \
   chown -R runner:runner /home/runner/.docker && \
   chmod -R 755 /home/runner/.docker
-
-# Create buildx builder (will be recreated at runtime if needed)
-RUN sudo -u runner docker buildx create --name container --driver docker-container --use --bootstrap || true
