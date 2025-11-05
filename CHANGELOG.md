@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.3](https://github.com/36node/github-runner/compare/v1.2.2...v1.2.3) (2025-11-05)
+
+
+### Bug Fixes
+
+* docker buildx use docker-container driver ([91abc8d](https://github.com/36node/github-runner/commit/91abc8dfa7f8d3b12ce7ec03f577a2a21a953445))
+
 ## [1.2.2](https://github.com/36node/github-runner/compare/v1.2.1...v1.2.2) (2025-11-05)
 
 
