@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.5](https://github.com/36node/github-runner/compare/v1.2.4...v1.2.5) (2025-11-05)
+
+
+### Bug Fixes
+
+* buildx ([9d975fb](https://github.com/36node/github-runner/commit/9d975fbe928a7e4546c8a51a50c7e42c0e4995ac))
+
 ## [1.2.4](https://github.com/36node/github-runner/compare/v1.2.3...v1.2.4) (2025-11-05)
 
 
