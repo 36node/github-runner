@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/36node/github-runner/compare/v1.2.0...v1.2.1) (2025-11-05)
+
+
+### Bug Fixes
+
+* docker config permission ([ccbdc60](https://github.com/36node/github-runner/commit/ccbdc606d7d6238f10fac8db491638aba78422fd))
+
 ## [1.2.0](https://github.com/36node/github-runner/compare/v1.1.0...v1.2.0) (2025-11-05)
 
 
