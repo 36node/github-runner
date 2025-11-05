@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/36node/github-runner/compare/v1.2.1...v1.2.2) (2025-11-05)
+
+
+### Bug Fixes
+
+* dockerfile install pnpm ([94da2bf](https://github.com/36node/github-runner/commit/94da2bf9f368cc2f712c4555d1192ce2cd08355d))
+
 ## [1.2.1](https://github.com/36node/github-runner/compare/v1.2.0...v1.2.1) (2025-11-05)
 
 
