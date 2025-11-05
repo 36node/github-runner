@@ -7,9 +7,8 @@ RUN sudo apt update -y && \
 RUN curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash - && \
   sudo apt-get install -y nodejs
 
-# Install pnpm 10
-RUN corepack enable && \
-  corepack prepare pnpm@10.9.0 --activate
+# Install pnpm globally
+RUN npm install -g pnpm
 
 # Install Docker Buildx
 RUN BUILDX_VERSION=$(curl -s "https://api.github.com/repos/docker/buildx/releases/latest" | jq -r .tag_name) && \
