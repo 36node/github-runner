@@ -2,7 +2,7 @@
 
 这是 36node 团队通用 github runner
 
-updated 2025-10-28
+updated 2025-11-05
 
 ## build 指令
 
@@ -16,6 +16,8 @@ docker buildx build --platform=linux/amd64 --push -t harbor.36node.com/common/ac
 - make
 - bash
 - jq
+- nodejs 22
+- pnpm 10
 
 ## customize
 
