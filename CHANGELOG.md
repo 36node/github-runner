@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.0](https://github.com/36node/github-runner/compare/v1.1.0...v1.2.0) (2025-11-05)
+
+
+### Features
+
+* pre-setup docker buildx ([47c13be](https://github.com/36node/github-runner/commit/47c13be3970bf4136bc8b6176da4f12862d16d09))
+* pre-setup nodejs 22 and pnpm 10 ([69fb9e0](https://github.com/36node/github-runner/commit/69fb9e08e5460cd4a684c431e793326643fdbf30))
+
 ## [1.1.0](https://github.com/36node/github-runner/compare/v1.0.1...v1.1.0) (2025-10-28)
 
 
