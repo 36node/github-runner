@@ -3,10 +3,14 @@ FROM ghcr.io/actions/actions-runner:2.329.0
 RUN sudo apt update -y && \
   sudo apt install -y curl make bash jq
 
-# Install Node.js 22 and npm 10
+# Install Node.js 22
 RUN curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash - && \
-  sudo apt-get install -y nodejs && \
-  sudo npm install -g npm@10
+  sudo apt-get install -y nodejs
+
+# Install pnpm 10
+RUN curl -fsSL https://get.pnpm.io/install.sh | env PNPM_VERSION=10 sh - && \
+  mv /root/.local/share/pnpm/pnpm /usr/local/bin/pnpm && \
+  chmod +x /usr/local/bin/pnpm
 
 # Install Docker Buildx
 RUN BUILDX_VERSION=$(curl -s "https://api.github.com/repos/docker/buildx/releases/latest" | jq -r .tag_name) && \
