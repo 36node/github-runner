@@ -2,7 +2,7 @@
 
 这是 36node 团队通用 github runner
 
-updated 2025-11-05
+updated 2026-01-22
 
 ## build 指令
 
