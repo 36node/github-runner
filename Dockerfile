@@ -1,4 +1,4 @@
-FROM ghcr.io/actions/actions-runner:2.329.0
+FROM ghcr.io/actions/actions-runner:2.331.0
 
 RUN sudo apt update -y && \
   sudo apt install -y curl make bash jq
