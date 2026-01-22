@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/36node/github-runner/compare/v1.2.5...v1.3.0) (2026-01-22)
+
+
+### Features
+
+* upgrade github runner to 2.331.0 ([fd8e32c](https://github.com/36node/github-runner/commit/fd8e32c89da87a912d60d36d1e522f3a28798576))
+
 ## [1.2.5](https://github.com/36node/github-runner/compare/v1.2.4...v1.2.5) (2025-11-05)
 
 
