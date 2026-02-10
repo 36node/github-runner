@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/36node/github-runner/compare/v1.3.0...v1.4.0) (2026-02-10)
+
+
+### Features
+
+* playwright install-deps chromium ([be5e282](https://github.com/36node/github-runner/commit/be5e282e6b8ad5d4c157d1e0515ad67b1d542bc7))
+
 ## [1.3.0](https://github.com/36node/github-runner/compare/v1.2.5...v1.3.0) (2026-01-22)
 
 
