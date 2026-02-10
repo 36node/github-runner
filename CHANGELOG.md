@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/36node/github-runner/compare/v1.4.0...v1.4.1) (2026-02-10)
+
+
+### Bug Fixes
+
+* github runner image push to harbor ([6eea9c6](https://github.com/36node/github-runner/commit/6eea9c69f2239e67d5c05f8eca35c1300a529d37))
+
 ## [1.4.0](https://github.com/36node/github-runner/compare/v1.3.0...v1.4.0) (2026-02-10)
 
 
