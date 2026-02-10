@@ -9,7 +9,7 @@ on:
 permissions: write-all
 
 env:
-  DOCKER_IMAGE: harbor.36node.com/common/actions-runner
+  DOCKER_IMAGE: harbor.36node.com/36node/github-runner
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
