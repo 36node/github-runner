@@ -9,7 +9,7 @@ on:
 permissions: write-all
 
 env:
-  DOCKER_IMAGE: 36node/github-runner
+  DOCKER_IMAGE: harbor.36node.com/common/actions-runner
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -50,11 +50,12 @@ jobs:
         uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-      - name: Login to DockerHub
+      - name: Login to Harbor
         uses: docker/login-action@v3
         with:
-          username: "${{ secrets.DOCKERHUB_USERNAME }}"
-          password: "${{ secrets.DOCKERHUB_TOKEN }}"
+          registry: harbor.36node.com
+          username: "${{ secrets.HARBOR_USERNAME }}"
+          password: "${{ secrets.HARBOR_PASSWORD }}"
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
