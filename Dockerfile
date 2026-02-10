@@ -15,6 +15,11 @@ RUN sudo corepack enable && \
   # Trigger actual pnpm download without prompts
   COREPACK_ENABLE_DOWNLOAD_PROMPT=0 pnpm --version
 
+# Install Playwright system dependencies (for Chromium)
+# 只装 OS 级依赖（libglib, libnss, libatk 等），不装浏览器二进制
+# 浏览器二进制由各项目 CI 中 `playwright install chromium` 按版本安装
+RUN npx -y playwright install-deps chromium
+
 # Install Docker Buildx and setup builder
 RUN BUILDX_VERSION=$(curl -s "https://api.github.com/repos/docker/buildx/releases/latest" | jq -r .tag_name) && \
   curl -L "https://github.com/docker/buildx/releases/download/${BUILDX_VERSION}/buildx-${BUILDX_VERSION}.linux-amd64" -o docker-buildx && \
