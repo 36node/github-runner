@@ -20,6 +20,11 @@ RUN sudo corepack enable && \
 # 浏览器二进制由各项目 CI 中 `playwright install chromium` 按版本安装
 RUN npx -y playwright install-deps chromium
 
+# Install MinIO Client (for CI cache)
+RUN curl -fsSL https://dl.min.io/client/mc/release/linux-amd64/mc -o mc && \
+  chmod a+x mc && \
+  sudo mv mc /usr/local/bin/
+
 # Install Docker Buildx and setup builder
 RUN BUILDX_VERSION=$(curl -s "https://api.github.com/repos/docker/buildx/releases/latest" | jq -r .tag_name) && \
   curl -L "https://github.com/docker/buildx/releases/download/${BUILDX_VERSION}/buildx-${BUILDX_VERSION}.linux-amd64" -o docker-buildx && \
