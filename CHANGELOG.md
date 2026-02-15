@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/36node/github-runner/compare/v1.4.2...v1.5.0) (2026-02-15)
+
+
+### Features
+
+* add mc ([5aa667a](https://github.com/36node/github-runner/commit/5aa667a6338a40913ae8d31147f3610661c52f37))
+
 ## [1.4.2](https://github.com/36node/github-runner/compare/v1.4.1...v1.4.2) (2026-02-10)
 
 
