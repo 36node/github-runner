@@ -9,7 +9,7 @@ RUN curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash - && \
 
 # Install pnpm 10 using corepack (skip interactive prompts)
 RUN sudo corepack enable && \
-  sudo corepack prepare pnpm@10.20.0 --activate && \
+  sudo corepack prepare pnpm@10.28.1 --activate && \
   sudo mkdir -p /home/runner/.npm /home/runner/.config /home/runner/.cache && \
   sudo chown -R runner:runner /home/runner/.npm /home/runner/.config /home/runner/.cache && \
   # Trigger actual pnpm download without prompts
