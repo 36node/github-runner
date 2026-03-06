@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/36node/github-runner/compare/v1.5.0...v1.5.1) (2026-03-06)
+
+
+### Bug Fixes
+
+* update pnpm version ([8f0731e](https://github.com/36node/github-runner/commit/8f0731eb0ce39fbfccdc82ddf0981815f2643b15))
+
 ## [1.5.0](https://github.com/36node/github-runner/compare/v1.4.2...v1.5.0) (2026-02-15)
 
 
