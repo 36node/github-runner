@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.2](https://github.com/36node/github-runner/compare/v1.5.1...v1.5.2) (2026-03-16)
+
+
+### Bug Fixes
+
+* pnpm use npm install ([7f80b03](https://github.com/36node/github-runner/commit/7f80b03d79aef363bb594b9213863ee865ab585b))
+
 ## [1.5.1](https://github.com/36node/github-runner/compare/v1.5.0...v1.5.1) (2026-03-06)
 
 
