@@ -7,13 +7,11 @@ RUN sudo apt update -y && \
 RUN curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash - && \
   sudo apt-get install -y nodejs
 
-# Install pnpm 10 using corepack (skip interactive prompts)
-RUN sudo corepack enable && \
-  sudo corepack prepare pnpm@10.28.1 --activate && \
+# Install pnpm globally and disable Corepack (avoid Corepack downloading pnpm on every CI run)
+RUN sudo corepack disable && \
+  sudo npm install -g pnpm@10.28.1 && \
   sudo mkdir -p /home/runner/.npm /home/runner/.config /home/runner/.cache && \
-  sudo chown -R runner:runner /home/runner/.npm /home/runner/.config /home/runner/.cache && \
-  # Trigger actual pnpm download without prompts
-  COREPACK_ENABLE_DOWNLOAD_PROMPT=0 pnpm --version
+  sudo chown -R runner:runner /home/runner/.npm /home/runner/.config /home/runner/.cache
 
 # Install Playwright system dependencies (for Chromium)
 # 只装 OS 级依赖（libglib, libnss, libatk 等），不装浏览器二进制
