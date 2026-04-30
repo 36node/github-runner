@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.3](https://github.com/36node/github-runner/compare/v1.5.2...v1.5.3) (2026-04-30)
+
+
+### Bug Fixes
+
+* bump actions-runner to 2.334.0 to fix deprecated runner version ([9698714](https://github.com/36node/github-runner/commit/96987142a34b1a067d87b40f8e0b5712c51650c2))
+
 ## [1.5.2](https://github.com/36node/github-runner/compare/v1.5.1...v1.5.2) (2026-03-16)
 
 
