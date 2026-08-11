@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.4](https://github.com/36node/github-runner/compare/v1.5.3...v1.5.4) (2026-08-11)
+
+
+### Bug Fixes
+
+* bump actions-runner to 2.336.0 ([#20](https://github.com/36node/github-runner/issues/20)) ([11bc0bf](https://github.com/36node/github-runner/commit/11bc0bf965ece2a4eabf94598f20c52bc444c6d2))
+
 ## [1.5.3](https://github.com/36node/github-runner/compare/v1.5.2...v1.5.3) (2026-04-30)
 
 
