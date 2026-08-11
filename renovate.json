@@ -1,0 +1,23 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "semanticCommits": "enabled",
+  "commitMessagePrefix": "fix:",
+  "commitMessageAction": "bump",
+  "commitMessageTopic": "actions-runner",
+  "prTitle": "fix: bump actions-runner to {{newVersion}}",
+  "packageRules": [
+    {
+      "description": "Only track upstream actions-runner base image",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["ghcr.io/actions/actions-runner"],
+      "enabled": true
+    },
+    {
+      "description": "Disable everything else in this repo",
+      "matchPackagePatterns": ["*"],
+      "excludePackageNames": ["ghcr.io/actions/actions-runner"],
+      "enabled": false
+    }
+  ]
+}
