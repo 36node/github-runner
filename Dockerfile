@@ -1,4 +1,6 @@
-FROM ghcr.io/actions/actions-runner:2.334.0
+# Track latest: ARC disables runner self-update, and GitHub rejects job messages
+# from runner versions that fall out of the support window (exit code 7).
+FROM ghcr.io/actions/actions-runner:latest
 
 RUN sudo apt update -y && \
   sudo apt install -y curl make bash jq
