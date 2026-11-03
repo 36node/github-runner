@@ -1,4 +1,4 @@
-FROM ghcr.io/actions/actions-runner:2.336.0
+FROM ghcr.io/actions/actions-runner:2.338.2
 
 RUN sudo apt update -y && \
   sudo apt install -y curl make bash jq
@@ -19,7 +19,11 @@ RUN sudo corepack disable && \
 RUN npx -y playwright install-deps chromium
 
 # Install MinIO Client (for CI cache)
-RUN curl -fsSL https://dl.min.io/client/mc/release/linux-amd64/mc -o mc && \
+# dl.min.io 已停止分发社区版 mc（返回 410），改用 GitHub release 固定版本并校验 sha256
+ARG MC_VERSION=RELEASE.2025-08-13T08-35-41Z
+ARG MC_SHA256=01f866e9c5f9b87c2b09116fa5d7c06695b106242d829a8bb32990c00312e891
+RUN curl -fsSL "https://github.com/minio/mc/releases/download/${MC_VERSION}/mc.linux-amd64.${MC_VERSION}" -o mc && \
+  echo "${MC_SHA256}  mc" | sha256sum -c - && \
   chmod a+x mc && \
   sudo mv mc /usr/local/bin/
 
